@@ -78,7 +78,7 @@ class AlphaManagement(QMainWindow):
         qp.end()
 
     def draw(self, qp):
-        qp.setBrush(QColor('yellow'))
+        qp.setBrush(QColor(random.randint(100, 255), random.randint(100, 255), random.randint(100, 255)))
         r = random.randint(10, 80)
         qp.drawEllipse(random.randint(100, 800), random.randint(100, 600), r, r)
         self.k = False
